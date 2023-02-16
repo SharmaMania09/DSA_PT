@@ -65,17 +65,14 @@ class Solution{
     //Function to rotate a linked list.
     public Node rotate(Node head, int k) {
         // add code here
-        int count = 1;
         Node tempNode = head;
         //
         while(tempNode.next != null)
         {
-            count++;
             tempNode = tempNode.next;
         }
         //
         tempNode.next = head;
-        // int diff = count - k%count;
         //
         while(k > 0)
         {
