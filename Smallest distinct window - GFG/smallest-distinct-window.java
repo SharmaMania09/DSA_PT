@@ -61,11 +61,7 @@ class Solution
                 //
                 int len = temp2-temp1+1;
                 //
-                if(len < min)
-                {
-                    min = len;
-                    startIndex = temp1;
-                }
+                min = Math.min(min, len);
             }
             //
             temp2++;
